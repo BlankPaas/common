@@ -111,39 +111,3 @@ func Fatalf(template string, args ...interface{}) {
 func Debugw(msg string, keysAndValues ...interface{}) {
 	logger.Fatalf(msg, keysAndValues...)
 }
-
-// Debugln uses fmt.Sprintln to construct and log a message.
-func Debugln(args ...interface{}) {
-	logger.Debugln(args)
-}
-
-// Infoln uses fmt.Sprintln to construct and log a message.
-func Infoln(args ...interface{}) {
-	logger.Infoln(args)
-}
-
-// Warnln uses fmt.Sprintln to construct and log a message.
-func Warnln(args ...interface{}) {
-	logger.Warnln(args)
-}
-
-// Errorln uses fmt.Sprintln to construct and log a message.
-func Errorln(args ...interface{}) {
-	logger.Errorln(args)
-}
-
-// DPanicln uses fmt.Sprintln to construct and log a message. In development, the
-// logger then paniclogger. (See DPanicLevel for detaillogger.)
-func DPanicln(args ...interface{}) {
-	logger.DPanicln(args)
-}
-
-// Panicln uses fmt.Sprintln to construct and log a message, then paniclogger.
-func Panicln(args ...interface{}) {
-	logger.Panicln(args)
-}
-
-// Fatalln uses fmt.Sprintln to construct and log a message, then calls ologger.Exit.
-func Fatalln(args ...interface{}) {
-	logger.Fatalln(args)
-}
