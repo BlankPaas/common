@@ -2,11 +2,14 @@ module github.com/BlankPaas/common
 
 go 1.18
 
-require github.com/asim/go-micro/v3 v3.7.1
+require (
+	github.com/asim/go-micro/plugins/config/source/consul/v3 v3.7.0
+	github.com/asim/go-micro/v3 v3.7.1
+	github.com/opentracing/opentracing-go v1.2.0
+)
 
 require (
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
-	github.com/asim/go-micro/plugins/config/source/consul/v3 v3.7.0 // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
