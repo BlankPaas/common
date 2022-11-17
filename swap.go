@@ -2,8 +2,8 @@ package common
 
 import "encoding/json"
 
-func SwapTo(request, target interface{}) (err error) {
-	dataByte, err := json.Marshal(request)
+func SwapTo(source, target interface{}) (err error) {
+	dataByte, err := json.Marshal(source)
 	if err != nil {
 		return
 	}
